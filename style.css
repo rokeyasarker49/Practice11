@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #F7F8FA;
+}
+.home{
+    padding: 48px 30px;
+    border-radius: 30px;
+}
+.home__header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.home__overview{
+    margin-bottom: 32px;
+}
+.home__overview-title{
+    color:#222950;
+    font-family: "Plus Jakarta Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.home__overview-description{
+    color: #8A94A6;
+    font-family: "Plus Jakarta Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.714%; /* 18.72px */
+}
+.home__overview-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 17px;
+}
+.order__activity{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 17px;
+    margin-bottom: 32px;
+}
+.order__activity-item{
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.order__activity-title{
+    padding: 9px;
+}
+.order__activity-icon{
+    margin-right: 11px;
+}
+.order__activity-title{
+    color: var(--black-2, #595F84);
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 183.333% */
+    display: flex;
+    align-items: center;
+}
+.order__activity-amount{
+    color: #05BB42;
+    text-align: center;
+    font-family: "Plus Jakarta Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; /* 183.333% */
+    margin-right: 20px;
+}
+
+.order__activity-item:nth-child(1) .order__activity-amount{
+    color: #05BB42;
+}
+.order__activity-item:nth-child(2) .order__activity-amount{
+    color: #E69D49; 
+}
+.order__activity-item:nth-child(3) .order__activity-amount{
+    color: #E8515A; 
+}
+.order__activity-item:nth-child(4) .order__activity-amount{
+    color: #9A7EFF; 
+}
+.pending-order__profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(5, 46, 128, 0.05);
+    margin-bottom: 20px;
+    padding: 17px;
+}
+.profile__image{
+    display: flex;
+    align-items: center;
+}
+.profile__details{
+    margin-left: 18px;
+}
+.profile__details-title{
+    color: #222950;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Baloo Da 2";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+.profile__details-interested{
+    color: #007AFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Baloo Da 2";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+.profile__dropdown{
+    display: flex;
+    align-items: center;
+}
+.profile__dropdown h3{
+    color: #007AFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; /* 19.2px */
+    border-radius: 50px;
+    background: #F5FAFF;
+    padding: 8px;
+    margin-right: 15px;
+}
+.my-order__product-btns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.my-order__product-btns button{
+    padding: 13px 0;
+    border-right: 1px solid rgba(46, 49, 133, 0.08);
+}
+.my-order__product-btns button:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FF565E;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 17.6px */
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-right: 1px solid rgba(46, 49, 133, 0.08);
+
+}
+.my-order__product-btns button:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007AFF;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 17.6px */
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.my-order__product-btns button:first-child svg,
+.my-order__product-btns button:last-child svg{
+    margin-right: 10px;
+    display: inline-block;
+}
+.my-order__btns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-bottom: 20px;
+}
+
+.my-order__btns button:first-child{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid none;
+    background: #fff8ee; 
+    color: #EF452F;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 157.143% */   
+    cursor: pointer;
+}
+
+.my-order__btns button:last-child{
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid none;
+    background: #6587d0;  
+    color: #254ded;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 157.143% */   
+    cursor: pointer;
+}
+
+.paid__btn{
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 10px;
+    background: var(--g, linear-gradient(180deg, #258AFF 0%, #0063FF 100%));
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 157.143% */
+}
